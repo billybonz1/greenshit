@@ -1,0 +1,414 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.top__menu
+		padding-left: 0px
+		transition: .4s all
+		ul
+			overflow: hidden
+			transition: .4s all
+			height: 0px
+			&.active_menu
+				height: auto
+				overflow: visible
+				transition: .4s all
+			li
+				width: 100%
+				display: block
+				text-align: center
+			a
+				text-align: center
+				font-size: 16px
+	.middle__menu
+		.col-lg-12
+			ul
+				width: 100%
+				height: auto
+				li
+					display: block
+					width: 100%
+				a
+					text-align: center
+		.first_li1
+			margin: 0
+		.col-lg-12 > ul .first
+			width: 100%
+			margin: 0
+			border-bottom-left-radius: 0
+			border-top-right-radius: 10px
+			img
+				left: 4px
+				bottom: 8px
+			a
+				margin: 0
+
+		.li1
+			text-align: center
+			a
+				font-size: 21px
+				text-align: center
+
+		.col-lg-12 > ul > li li
+			&:first-child
+				&:after
+					bottom: 4px
+		.search
+			margin-left: 350px
+
+	.left_doors
+		margin: 0 auto
+		margin-bottom: 10px
+		margin-left: 85px
+	.right_doors
+		margin: 0 auto
+		margin-bottom: 10px
+		margin-left: 110px
+	.mid_l_doors
+		margin-bottom: 10px
+		margin-left: 110px
+		margin-right: 0
+	.mid_r_doors
+		margin-left: 85px
+	.mid__but
+		button
+			margin-left: 160px
+	.mid__clasic
+		p
+			margin-right: 30px
+	.mid__compl
+		height: 500px
+	.mid_block
+		height: 525px
+	.location_mid
+		display: inline-flex
+		clear: both
+		margin-left: 70px
+	.phone
+		float: none
+	.slider_container
+		width: 100%
+	.slide_item
+		width: 100%
+		background-size: cover
+		border-top-right-radius: 10px
+		h1
+			font-size: 34px
+		h2
+			width: 47%
+			margin-left: 180px
+		p
+			margin-left: 170px
+	.owl-item
+		width: 50%
+	.next_button
+		left: 657px
+	.header__img
+		img
+			width: 100%
+	.owl-pagination
+		margin-left: 44%
+
+
+	/*catalog*/
+	.catalog__middle
+		.catalog
+			width: 100%
+			height: 750px
+	.catalog_opis
+		h1
+			text-align: center
+		p
+			text-align: center
+		.first-a-type
+			margin-left: 140px
+		.first-a-country
+			margin-left: 230px
+	.catalog_photo
+		height: 400px
+		.first-a
+			margin-left: 240px
+		img
+			margin-left: 190px
+	.mejk_door
+		width: 100%
+		height: auto
+		.mej-door
+			h1
+				text-align: center
+			img
+				margin-left: 140px
+			.panel-vibor
+				padding-left: 190px
+				img
+					margin-left: 5px
+		.koob
+			padding-left: 98px
+		.perechen
+			padding-left: 170px
+		p
+			text-align: center
+			padding-left: 0
+
+	.furnityra
+		width: 100%
+		div
+			margin: 0 auto
+			display: block
+	.sell_doors
+		width: 100%
+		height: 400px
+
+		img
+			display: block
+			left: 205px
+			bottom: 125px
+		a
+			margin-right: 90px
+			margin-top: 230px
+	.foo_nav
+		width: 100%
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+	.next_button
+		left: 225px
+	.slide_item
+		h1
+			font-size: 22px
+			line-height: 25px
+		h2
+			width: 90%
+			margin-left: 15px
+	.owl-pagination
+		margin-left: 37%
+
+	.middle__doors
+		.inner
+			div
+				display: block
+	.left_doors
+		margin: 0 auto
+		margin-bottom: 10px
+		width: 290px
+		height: auto
+
+	.ld
+		div
+			padding-left: 75px
+		h6
+			left: 90px
+		p
+			position: absolute
+			left: 90px
+			width: 100px
+		h5
+			left: 110px
+			width: 127px
+	.reload1
+		button
+			margin-left: 8%
+		img
+			margin-left: 41%
+	.middle__doors
+		.inner
+			.right_doors
+				margin: 0 auto
+				margin-bottom: 10px
+				width: 290px
+				height: auto
+				.lr
+					div
+						display: block
+						padding-left: 68px
+					h1
+						text-align: left
+						font-size: 17px
+						width: 290px
+					p
+						margin-left: 10px
+					h5
+						margin-left: 10px
+		.reload2
+			button
+				margin-left: 8%
+	.mid_l_doors
+		margin-bottom: 10px
+		margin-right: 0
+		margin-left: 0
+		width: 290px
+		img
+			margin-left: 0
+			padding-left: 40px
+	.mid_r_doors
+		width: 290px
+		margin-left: 0
+		height: auto
+		.but1
+			margin-left: 44px
+		.but2
+			margin-left: 52px
+	.mid__but
+		button
+			margin-left: 0px
+			width: 290px
+	.mid__clasic
+		p
+			margin-right: 30px
+	.mid__compl
+		height: 500px
+	.mid_block
+		height: auto
+		.opis
+			padding-left: 26px
+	.footer
+		padding-top: 525px
+	.location_mid
+		display: block
+		clear: both
+		margin-left: 70px
+	.phone
+		float: none
+	.footer-phone
+		button
+			margin-left: 50px
+
+	.catalog__middle
+		.catalog
+			height: auto
+			.catalog_photo
+				img
+					margin-left: -37px
+				.first-a
+					margin-left: 10px
+			.catalog_opis
+				.type_buy
+					padding-left: 95px
+					.first-a-type
+						margin-left: 6px
+			.catalog_country
+				padding-bottom: 15px
+				padding-left: 95px
+				a
+					display: block
+				.first-a-country
+					margin-left: 9px
+		.mej-door
+			h1
+				text-indent: 0
+			img
+				width: 320px
+				height: 300px
+				margin-left: -30px
+			.panel-vibor
+				padding-left: 9px
+				img
+					width: 40px
+					height: 40px
+		.koob
+			padding-left: 25px
+		.perechen
+			padding-left: 35px
+		.mejk_door
+			p
+				padding-bottom: 20px
+		.furnityra
+			div
+				width: 290px
+				img
+					height: 125px
+					margin-left: 20px
+				a
+					text-align: center
+					margin-left: 4px
+					font-size: 50px
+		.sell_doors
+			a
+				margin-right: 0
+				line-height: 45px
+				text-align: center
+				padding-top: 20px
+
+			img
+				left: 5px
+				bottom: 149px
+		.foo_nav
+			padding-top: 0px
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+	.furnityra
+		div
+			width: 290px
+		img
+			height: 125px
+			margin-left: 20px
+		a
+			text-align: center
+		.sell_doors
+			a
+				margin-right: 0
+			img
+				left: 5px
+				bottom: 173px
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

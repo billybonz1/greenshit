@@ -1,0 +1,265 @@
+@import "bourbon"
+@import "owl_carousel.sass"
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css)
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+body
+  background: #66ad2b
+  font-family: 'Open Sans'
+  line-height: 1.4
+
+.inner
+  max-width: 1200px
+  margin: 0 auto
+
+
+.top__menu
+  transition: .4s all
+  ul
+    border-bottom: 2px solid #eaeaea
+  li
+    display: inline-block
+    a
+      font-weight: 300
+      font-size: 11px
+      color: #0b0b0b
+      padding: 12px 8px
+      display: block
+      transition: .2s all
+      &:hover
+        text-decoration: none
+        background: #eefd00
+
+.header__top
+  padding-top: 15px
+
+.logo
+  font-size: 48px
+  color: #171717
+  font-weight: bold
+  letter-spacing: -4px
+  &:hover
+    color: #171717
+    text-decoration: none
+
+.location
+  font-size: 12px
+  color: #171717
+  text-decoration: underline
+  margin-top: 25px
+
+.phone
+  font-size: 10px
+  font-weight: 300
+  background-repeat: no-repeat
+  background-position: 0px center
+  padding-left: 49px
+  margin-right: 32px
+  margin-top: 4px
+  a
+    display: block
+    font-size: 18px
+    color: inherit
+    font-weight: bold
+  i
+    margin-right: 13px
+    margin-top: 10px
+    width: 35px
+    height: 35px
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU1OUZDMDgxMTUxNTExRTZBMjFDQ0Y5MTJDNDU5Nzk3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjU1OUZDMDgyMTUxNTExRTZBMjFDQ0Y5MTJDNDU5Nzk3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTU5RkMwN0YxNTE1MTFFNkEyMUNDRjkxMkM0NTk3OTciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTU5RkMwODAxNTE1MTFFNkEyMUNDRjkxMkM0NTk3OTciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6+JIz2AAACNElEQVR42sSXSyhFQRjHRUKSPFdsFAuJUKRY6N4oeaRYSFigZGFhQRYs2NnqkgXJSrFQHiGv8kjYEvKOBSlKycbjf25zakxz7szcOef46rc58zi/c+bMN98JC7EnYsAxqAIp4B08hfxT5IAfhkPQCkLdlskF5xwhg0vQrPOUI2AQhCuOTQctYJkjtQCSVSarZiY4BXFBPlQWmGbmewFFMoOrLF7zNUjSWMJSzhKWBxpQayFicq8pZCz3LDMn9w1lC0RM7kCixc3qwBnwAU8AKR813ydIYDusSMoY3IJYzk0mmX47ZHl4McNs/z/xqiBjMM65QT9JcmzffguhS6pPG93wqShzbHGDSLJcW0z/MU7fDKr9g4z1x4OiTL3EB9sp8Ybo76fXvLiqIDKgsIPKmLE5THs0+Kbyjz96HBAxo50af8Jpn6La/R98qoRIt0aOOaDmKWHaSngbY08gE6ch46XmmeckQ7Pty7xYIZBZ1DzV6bOODWO3LYEh+uKNQMijIVMMClVO7WqBjJEco9wsko4EQrtuyqRJ7KxpN4X6JIRG3RTalhCakJjHQxLbMIgIViaKpGiR0IpFScFmX4OLAPWQMDIlj4lHUMmMbQ1QoCXZkT1FzJEHaHCyhK1RLDFkS9j4YIUqHBC6Ir/FQUWBRWmpw4jOljfOlg0bZTbtyEMDNsl47UqMeZziW4VOJ7J1EykpVUQ6nD5CGsG+hEiXm+daPqna1sjP2ht4BuucTP0nfgUYALMd2JJOCTPJAAAAAElFTkSuQmCC)
+  span, i
+    display: inline-block
+    vertical-align: middle
+    margin-top: 5px
+  &:hover
+    i
+      animation: 1s phone-shake ease
+
+.star
+  margin-top: 25px
+  margin-left: 2px
+  width: 26px
+  height: 26px
+  background-repeat: no-repeat
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJEOUQ4QzMxMTUxNzExRTY4NjRFODA3MzdEMEM4NEYyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJEOUQ4QzMyMTUxNzExRTY4NjRFODA3MzdEMEM4NEYyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkQ5RDhDMkYxNTE3MTFFNjg2NEU4MDczN0QwQzg0RjIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkQ5RDhDMzAxNTE3MTFFNjg2NEU4MDczN0QwQzg0RjIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6HOeubAAACE0lEQVR42rSWSyhFURSGr2d5JeSZUhKFMpFSHnkNFIUhSYlkooxkIoMrAxkgM0bC1MBAigkTA0oeKZG8HzdvIsJ/tI5Wq7Vxj6z6uvfs9e+11157n72Pn8s7SwD+4Mn1j1YBXsA1KKO2LNAJ8v4a3A2qQB14F2yL5wAnAwQogX9iAkSCIG8GKnEwkMUD8IBR4MsD+ogBkkER6AaJwncOFsAaBc2gtUkwJJsCdjRHkSHLW9BsKEkgaACXSr8oU7m6FPGuMrN60CLaYthMbQaVin1aphA+gmhFZ/ulhYArJdFcKWwUokYlWC7zVyj+aqUqM1zQJpxXoizpIB8sMs0KKKBNEcvKdGxKOF7JYpJ87V5sbTf1GWZtF/Yg1l6/pyy4rdLvLNj8xXtnbeMp+r/B2oNpm39ZEm1jO5MOEWgEPCuzsM6+caFtFZpTOjG+bJc5x5SsPcpAj4puUNGl2c5K8MYcHtE5+5u1KRXafeHv4c5xJUAt8/ez9j7qbD+PMl25iNEpp5sDDoToDoSyRKwFLxbv1BaYpmc/2mU8RrbLcG4NCOH6d2cWszCwpFSlz9QhUBGfGU4B26zb9tCwfjWmayIOnBgC7oE5KpcVJJVKmSJ0N7SG82DZlJ0vLa71Er86vPxqvblhI+hCG3MwULjTDxQe5EgJ3EazGPrrl1Ah6KUb2J/elQcapMn1zxZLm+HX9iHAAPcyE4//7X7jAAAAAElFTkSuQmCC)
+
+.header__cart
+  min-height: 31px
+  background-repeat: no-repeat
+  padding-left: 45px
+  background-position: 0px center
+  color: #171717
+  font-size: 10px
+  font-weight: 300
+  line-height: 30px
+  margin-top: 15px
+  display: block
+  margin-right: 10px
+  transition: .5s all
+  &:hover
+    text-decoration: none
+    color: #171717
+    font-size: 11px
+    i
+      transform: rotate(-2deg) translateX(2px)
+  .korzina
+    transform: translateX(-6px)
+    transition: .5s all
+    display: inline-block
+    vertical-align: middle
+    margin-right: 5px
+    margin-top: 6px
+    width: 33px
+    height: 31px
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAfCAYAAABplKSyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBBQkNBMzgyMTUxODExRTZBNjY0ODJFQTAwMDU0RTUxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjBBQkNBMzgzMTUxODExRTZBNjY0ODJFQTAwMDU0RTUxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MEFCQ0EzODAxNTE4MTFFNkE2NjQ4MkVBMDAwNTRFNTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MEFCQ0EzODExNTE4MTFFNkE2NjQ4MkVBMDAwNTRFNTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5WjncmAAAC+0lEQVR42sSXSWgUQRSGa9oRPSiIQQdXXCMSlKiJHtRowGVUFJfkMOaQg+YQFTwqqEQFvQiKCC54cU+iggRRY4zigqBkEILRg4oLouOgicYlHpLJ+Bf8DY9iumd6Nh98VNVfNd2vqt6r6lFKqRbQJfgOIuC4yqPFQNyB8flwwA8CYAbb+sU+0ABGghXglPpPdoYONeTjZT4HvQpcAFFwCRSDwaA/i+/VsXdVT9jJCb1FX/K06jU+l86HYCHoBY2gk3ESYn8TeA8srtAksJp95zhTu28mKAd94ASTYT4oBb/cPNzBuDAHdVOvNvQikVWm7aIeFlqlPd5yceIOyyGgROjXWYaM8YNEfYDRt4Zls9CWswz7XZx4Br6CEeA82/aMtS02sme0qOut+i2CcA7rQTCF2iqx7a520eUgyxbr/EmcaAUbWb/HINVLvYTac/CZM9MrNov6I/CXL5kIChmgrdRGMVi1PU62EmOEx8uE3k5tt9BKxNiBQj9JrUVo+6npSSgriROfwEvWa4V+i+VKocUd6vaq3RDaerFiyp/CYXIF1DGQbnJZJ7BvntACRmb9YcZMpqZTeilXqSjVrbCtNIdBOc7t7pBmMVWHcw/DXMEQyzbwggG4SKToDzCbN3QPuMaTcgFP1w5xe6dk9fS8SWjN1I6xPTXBiXma7ctCe0rtsNdLJsgf6plM4+rspRZh2pYLJwLUPrJdx+cUizGVXhzQp91tYy+j3CLZ7jTaUdH+xvNEPmOYFwdyEZCbzM87NzvKUs/6CG9Un0rPLAboA/DKy9fPT3q+Odcfuk4WZ5oNBRt4sHSn8RkXy/QrbZuxl738Ournw/tEW46z+2LkHdiZiSMHshiQBzNxpJCXTZxLq6P7kHj4PlDB3Nfla+odvDMaxdiCTBy5z4ecFZq9DWXG2DfUt7BdIJyY6yUwTfvAUt+mW8F0ka49xtgu3p7b6WjQcDBtG+uwz/UJxpY5jN2TjZTW1/pdpmokySW0FjzhAfeWfyES2j8BBgDSzkPJGw8ZMwAAAABJRU5ErkJggg==)
+
+.header__img
+  padding-top: 10px
+  img
+    width: 100%
+
+.middle__menu
+  padding-top: 20px
+  ul,li
+    list-style-type: none
+  .search
+    margin-left: 160px
+    &:hover
+      img
+        transform: rotate(45deg)
+        transition: .6s all
+
+.middle__nav
+  border-radius: 10px
+  height: 59px
+  width: 100%
+  padding: 0 15px
+
+.middle__nav__first
+  border-bottom-left-radius: 10px
+  border-top-left-radius: 10px
+  background-color: #eefd00
+  background: linear-gradient(220deg, rgb(238, 253, 0) 28%, lighten(rgb(238, 253, 0), 10%) 72%)
+  box-shadow: 0px 1px 4.9px 0.1px rgba(0, 0, 0, 0.5)
+  height: 100%
+  position: relative
+
+.middle__nav__second
+  border-bottom-right-radius: 10px
+  border-top-right-radius: 10px
+  background-color: #f7fff4
+  background: linear-gradient(0deg, darken(rgb(247, 255, 244), 20%) 0%, rgb(247, 255, 244) 100%)
+  box-shadow: 0px 1px 4.9px 0.1px rgba(0, 0, 0, 0.5)
+  height: 100%
+  ul
+    height: 100%
+  li
+    display: inline-block
+    height: 100%
+    vertical-align: top
+    a
+      font-size: 13px
+      line-height: 12px
+      height: 100%
+      color: #1a1a1a
+      display: block
+      padding: 0 10px
+
+
+.akcii
+  width: 118px
+  &:hover
+    background: darken(#eefd00, 5)
+    transition: .6s all
+  a
+    line-height: 50px
+
+.door-of-day
+  &:hover
+    background: darken(#eefd00, 5)
+    transition: .6s all
+  a
+    padding-top: 6px
+
+.first
+  ul
+    height: 100%
+
+
+.middle__slider
+  margin-bottom: 100px
+
+.slider_container
+  position: relative
+  margin-top: 6px
+  width: 1200px
+
+.slide_item
+  background: url(../img/slide.png)
+  background-size: cover
+  width: 1200px
+  height: 272px
+
+.owl-item
+  width: 1200px
+
+  h1
+    color: #1a1a1a
+    font-size: 34px
+    padding-top: 28px
+    font-weight: 700
+    line-height: 13px
+    text-align: center
+  h2
+    color: #161616
+    font-size: 36px
+    font-weight: 700
+    line-height: 13px
+    text-align: center
+    padding: 40px
+    width: 40%
+    margin-left: 258px
+    border: 3px dashed red
+    margin-top: 39px
+    margin-left: 359px
+  p
+    color: #1a1a1a
+    font-size: 14px
+    font-weight: 600
+    line-height: 13px
+    margin-top: 58px
+    margin-left: 410px
+
+.next_button,
+.prev_button
+  color: #fff
+  font-size: 46px
+  position: absolute
+  z-index: 10
+  cursor: pointer
+  top: 41%
+
+.prev_button
+  left: 15px
+
+.next_button
+  left: 1133px
+
+.owl-page
+  border-radius: 50%
+  background-color: #c6c6c6
+  width: 10px
+  height: 10px
+  margin-right: 10px
+
+.active
+  background-color: #3c3c3c
+
+.owl-pagination
+  display: inline-flex
+  margin-left: 47%
+  padding-top: 15px
