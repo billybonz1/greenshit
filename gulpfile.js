@@ -21,9 +21,11 @@ gulp.task('browser-sync', ['styles', 'scripts'], function() {
 
 gulp.task('styles', function () {
 	return gulp.src('sass/*.sass')
+		.pipe(sourcemaps.init())
 	.pipe(sass({
 		includePaths: require('node-bourbon').includePaths
 	}).on('error', sass.logError))
+		.pipe(sourcemaps.write('maps'))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
 	.pipe(cleanCSS())
